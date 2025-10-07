@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">MPhub</div>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger for Mobile -->
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- ===== SIDEBAR (Mobile Menu) ===== -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Hi, I'm <span>Mohit Panchal</span></h1>
+        <p>I build modern, responsive, and interactive websites with a focus on design and performance.</p>
+        <a href="#projects" class="btn-primary">View My Work</a>
+    </section>
+
+    <!-- ===== HERO SECTION WITH CHARACTER ===== -->
+    <section class="hero">
+        <div class="character-container">
+            <!-- Developer SVG -->
+            <img src="character3.png-removebg-preview.png" alt="Developer Character" class="character">
+
+            <!-- Orbit Wrapper -->
+            <div class="orbit-wrapper">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                    class="orbit html-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                    class="orbit css-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JS" class="orbit js-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Google Fonts in <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I am a BCA student with a passion for designing clean, modern, and user-friendly websites.
+            My journey in web development started with curiosity and a love for problem-solving,
+            and now I’m eager to bring creative ideas to life through code.
+        </p>
+        <blockquote class="thought">
+            “Good design is not just about how it looks — it’s about how it works.”
+        </blockquote>
+        <p class="about-text">
+            I am currently seeking a web development internship to apply my HTML, CSS, and JavaScript skills
+            while learning from real-world projects and industry experts.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript (Basic)</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg" alt="Clothes Store Website">
+
+            <h3>Clothes Store Website</h3>
+            <p>An elegant clothing store website showcasing modern fashion collections with smooth scroll and
+                animations.</p>
+            <div class="project-links">
+                <a href="https://github.com/mohitpanchal2910/clothing-hub" target="_blank" class="btn-project">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://mohitpanchal2910.github.io/clothing-hub/" target="_blank" class="btn-project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="https://images.pexels.com/photos/5327483/pexels-photo-5327483.jpeg" alt="Gym Website">
+            <h3>Gym Website</h3>
+            <p>A fitness website designed for beginners with a sleek interface, workout info, and responsive design.</p>
+            <div class="project-links">
+                <a href="https://github.com/mohitpanchal2910/Gym-website?tab=readme-ov-file#gym-website" target="_blank"
+                    class="btn-project">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://mohitpanchal2910.github.io/Gym-website/" target="_blank" class="btn-project">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <div class="contact-icons">
+            <a href="mailto:mohitpanchal9836@gmail.com" class="icon-btn" target="_blank">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mohit-panchal-m9836354/" class="icon-btn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/mohitpanchal2910" class="icon-btn" target="_blank">
+                <i class="fab fa-github"></i>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mohit | All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("closeBtn");
+        const overlay = document.getElementById("overlay");
+
+        // Open Sidebar
+        menuToggle.addEventListener("click", () => {
+            sidebar.classList.add("show");
+            overlay.classList.add("show");
+        });
+
+        // Close Sidebar
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        });
+
+        // Close when clicking outside
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("show");
+            overlay.classList.remove("show");
+        });
+    </script>
+
+</body>
+
+</html>
